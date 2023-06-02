@@ -1,0 +1,76 @@
+<!-- 웹사이트 구성 예제 6 -->
+<!-- 
+    이 예제는 .css 파일이 별도로 필요없이 html 파일에 CSS 코드를 적으면 됩니다.
+    <head> 의 <style> 부분에 코드를 추가하면 됩니다.
+ -->
+ <!-- 
+    이 파일의 디자인은 bootstrap 컨텐츠를 이용하였습니다.
+    Card 를 사용합니다.
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- bootstrap CDN -->
+    
+    <style>
+    header{
+        text-align: center;
+        background-color: rgb(219, 230, 242);
+    }   
+    .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+    }        
+    .box {
+            background-color: whitesmoke;
+            text-align: center;
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <h1> HELLO</h1>
+</header>
+<main>
+    <div class="container">
+        <!-- 여기서부터-->
+        <div class="card" style="width: 18rem;">
+            <!-- 삽입할 이미지 : 폴더포함 이름 지정 -->
+            <img src="image/anne.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card 제목</h5>
+              <p class="card-text">카드 설명 카드 설명 카드 설명.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <!-- 여기까지 -->
+        <div class="card" style="width: 18rem;">
+            <img src="image/anne.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="image/anne.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <!-- 카드 내부의 버튼을 클릭하면 구글 드라이브의 PDF로 연결됩니다 -->
+              <!-- 필요시 구글 드라이브에 파일을 올리고 링크를 걸어주세요 -->
+              <a href="https://drive.google.com/file/d/1qJyy5QXcT_SixG84-66XH4jVRtZ4evVH/view?usp=share_link" class="btn btn-primary" target="_blank">PDF보기</a>
+            </div>
+        </div>
+        <!-- 카드를 더 넣고 싶으면 여기에 div 블럭 단위로 추가 -->
+    </div>
+</main>
+</body>
+</html>

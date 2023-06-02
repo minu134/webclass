@@ -1,0 +1,73 @@
+<!-- 웹사이트 구성 예제 5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .title1{
+        padding-top: 20px;
+        grid-area:title1;
+        background-color: rgb(244, 206, 108);
+        text-align: center;
+        font-size: larger;
+    }
+    .title2{
+        padding-top: 20px;
+        grid-area:title2;
+        background-color: rgb(183, 202, 152);
+        text-align: center;
+        font-size: larger;
+    }
+    .main1{
+        grid-area:main1;
+        background-color: pink;
+        text-align: center;
+        font-size: larger;
+    }
+    .main2{
+        grid-area:main2;
+        background-color: rgb(160, 152, 211);
+        text-align: center;
+        font-size: larger;
+    }
+    .side{
+        grid-area:side;
+        background-color: rgb(134, 194, 198);
+        text-align: center;
+        font-size: larger;
+    }
+    .bottom{
+        grid-area: bottom;
+        background-color: gray;
+        text-align: center;
+        font-size: larger;
+    }
+    .container {
+        margin: 10px;
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10% 80% 10%;
+        grid-gap: 2px;
+        grid-template-areas:
+                "title1 title2 title2 ."
+                "main1 main2 . side"
+                "bottom bottom bottom bottom";
+    }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title1">제목1</div>
+        <div class="title2">제목2</div>
+        <div class="main1">메인 컨텐츠1</div>
+        <div class="main2">메인 컨텐츠2</div>
+        <div class="side">side</div>
+        <div class="bottom">bottom</div>
+    </div>
+</body>
+</html>
